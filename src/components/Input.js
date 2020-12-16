@@ -39,10 +39,10 @@ import React from 'react'; /* STEP 0 */
 export default function Input() {
   /* STEP 1 */
 
-  const changeInput = evt => {
+  const changeInput = event => {
     // When the input changes, its whole value can be found inside the event object.
     // Log out the synthetic event object 'evt' and see for yourself.
-    const { value } = evt.target;
+    const { value } = event.target;
 
     /* STEP 4 */
   };
@@ -62,7 +62,7 @@ export default function Input() {
       <div id='output' style={style}></div> {/* STEP 3 */}
       <div>
         <input id='input' type='text' onChange={changeInput} /> {/* STEP 6 */}
-        <button id='resetInput' onClick={reset}>Reset</button>
+        <button id='resetInput' onClick={reset, console.log('input reset')}>Reset</button>
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ export default function Spinner() {
       {
         true && <div id='spinner' className='spinner'>--+--</div> /* STEP 2 */
       }
-      <button id='toggleSpinner' onClick={toggleSpinner}>
+      <button id='toggleSpinner' onClick={ console.log('spinner'), toggleSpinner}>
         Hide Spinner {/* STEP 3 */}
       </button>
     </div>
