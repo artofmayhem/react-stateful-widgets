@@ -57,7 +57,7 @@ const Todos = () => {
        align-content-center todo-page"
       >
         <h3 className="display-4" style={{ padding: "2rem" }}>
-          My's Todo list
+          My Todo list
         </h3>
         <div className="d-flex justify-content-center align-content-center">
           <form
