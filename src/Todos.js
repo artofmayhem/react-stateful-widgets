@@ -92,6 +92,7 @@ const Todos = () => {
               onClick={() => handleCompleted(todo.id)}
               key={todo.id}
               style={{
+                cursor: "pointer",
                 border: "2px, solid, black",
                 padding: "1rem 5rem",
                 margin: "1rem 0",
