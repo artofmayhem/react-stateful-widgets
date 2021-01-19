@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 /* useState [] to hold todos with {id: <todos.id>, name: <todos.name> status: <complete/incomplete>} */
 /* way to delete todo items as well as to strike through*/
 
+
 const initialTodo = {
   id: "",
   description: "",
@@ -28,15 +29,15 @@ const Todos = () => {
     setTodo({ ...todo, description: e.target.value });
   };
 
-  console.log(todo.description);
+  //console.log(todo.description);
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(uuidv4());
+    // console.log(uuidv4());
 
     setTodos([...todos, { ...todo, id: uuidv4() }]);
     setTodo(initialTodo);
-    console.log({ todos });
+    // console.log({ todos });
   };
 
   const handleCompleted = (id) => {
@@ -57,8 +58,9 @@ const Todos = () => {
        align-content-center todo-page"
       >
         <h3 className="display-4" style={{ padding: "2rem" }}>
-          My Todo list
+          Lightbulb
         </h3>
+        <h4 style={{marginBottom: "1.5rem"}}>Inspiration Tracker</h4>
         <div className="d-flex justify-content-center align-content-center">
           <form
             className="todo-form d-flex align-content-center"
@@ -86,9 +88,11 @@ const Todos = () => {
         className="todo-list d-flex flex-column"
         style={{ padding: "3rem", textAlign: "center", marginTop: "2rem" }}
       >
+        <div><p>Click lightbulb items as you complete your tasks</p></div>
         {todos.map((todo) => {
           return (
             <div
+              className="todo-item"
               onClick={() => handleCompleted(todo.id)}
               key={todo.id}
               style={{
@@ -100,6 +104,8 @@ const Todos = () => {
                 backgroundColor: todo.complete && "black",
                 color: todo.complete && "#444",
                 opacity: todo.complete && "0.4",
+                boxShadow: todo.complete && "0 0 1rem white",
+               
               }}
             >
               <ul>
