@@ -57,9 +57,9 @@ const Todos = () => {
         className="d-flex flex-column justify-content-center
        align-content-center todo-page"
       >
-        <h2 style={{ padding: "2rem" }}>
+        <h3 style={{ padding: "2rem" }}>
           Lightbulb
-        </h2>
+        </h3>
         <h4 style={{marginBottom: ""}}>Inspiration Tracker</h4>
         <div className="d-flex justify-content-center align-content-center">
           <form
