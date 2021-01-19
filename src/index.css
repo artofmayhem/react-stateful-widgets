@@ -1,24 +1,40 @@
-
-
 .card {
-    box-shadow: 0 0 1.5rem black;
-    margin: 3rem 0;
-    background-color: #444;
-    text-shadow: 0 0 1rem #444;
-    background-image: url("https://assets.codepen.io/4996277/pexels-mitchell-luo-3694708_4.jpg");
-    color: white; 
-    opacity: 0.8
-
+  box-shadow: 0 0 1.5rem white;
+  margin: 3rem 0;
+  background-color: #444;
+  text-shadow: 0 0 1rem black;
+  background-image: url("https://assets.codepen.io/4996277/pexels-pixabay-356043.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  opacity: 0.8;
 }
 
 .todo-item {
-    border: 2px solid white;
-    border-radius: 5px;
-    
+  border: 2px solid white;
+  border-radius: 5px;
 }
-#videoBackground {
-    position: fixed;
-    right: 0;
-    bottom: 0;
+
+body {
+  background-image: url("https://assets.codepen.io/4996277/pexels-pixabay-355952.jpg");
+  
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6, p, li{
+font-family: 'Hachi Maru Pop', cursive;
+text-shadow: 0 0 1rem yellow;
+color: white;
+}
+
+.todo-page {
+    background-color: #444;
+    box-shadow: 0 0 1.5rem white;
+    padding: 2rem 0;
+    opacity: 0.8;
     width: 100%;
-  }
+    text-align: center;
+}
