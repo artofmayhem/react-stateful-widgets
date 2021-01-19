@@ -60,7 +60,7 @@ const Todos = () => {
         <h3 className="display-4" style={{ padding: "2rem" }}>
           Lightbulb
         </h3>
-        <h4 style={{marginBottom: "1.5rem"}}>Inspiration Tracker</h4>
+        <h4 style={{marginBottom: ""}}>Inspiration Tracker</h4>
         <div className="d-flex justify-content-center align-content-center">
           <form
             className="todo-form d-flex align-content-center"
